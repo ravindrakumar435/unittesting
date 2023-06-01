@@ -1,0 +1,11 @@
+<button (click)="toggleSwitch()">Toggle</button>
+
+<br>
+<div *ngIf="!this.switchState">
+    <img src="assets/pic_bulboff.jpg" alt="" height="100" width="100">
+</div>
+<div *ngIf="this.switchState">
+    <img src="assets/pic_bulbon.jpg" alt="" height="100" width="100">
+</div>
+<span>{{ switchState ? 'On' : 'Off' }}</span>
+
